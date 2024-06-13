@@ -73,15 +73,15 @@ function Main() {
         </section>
         <section>
           <div className="tab-row">
-            <div className="col-4">
+            <div className="col">
               <h2>Abendkleider</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga porro sapiente, corporis dignissimos laudantium illo expedita corrupti asperiores esse quae.</p>
             </div>
-            <div className="col-4">
+            <div className="col">
               <h2>Accessoires</h2>
               <p>Repellat qui, dolores nemo asperiores incidunt quidem dolorum. Quos, deleniti neque architecto dolore magni aliquid. Inventore suscipit consequuntur excepturi ipsam.</p>
             </div>
-            <div className="col-4">
+            <div className="col">
               <h2>Schuhe</h2>
               <p>Doloribus perferendis a ipsum ad, consectetur animi aliquam maxime, earum aspernatur, ea commodi tempore suscipit explicabo cupiditate at nemo quae.</p>
             </div>
@@ -90,17 +90,19 @@ function Main() {
       </main>
       <footer className="footer">
         <div className="row">
-          <div className="col-6">
-            <p><i className="fa fa-phone" aria-hidden="true"></i>Tel. 0711 / 39 11 11 14</p>
-            <p id='Anfahrt'>Anfahrt</p>
-            <img src={AnfahrtPNG} alt="Anfahrt" />
-           
-            <p>73728 Esslingen am Neckar</p>
-          </div>
-          <div className="col-6">
+          <div className="col-5">
             <h3>Interessieren Sie sich für elegante und festlichen Mode? </h3>
             <p>Dann besuchen Sie uns doch in unserer Boutique Chantal</p>
           </div>
+          <div className="col-1"></div>
+          <div className="col-6">
+            <p><i className="fa fa-phone" aria-hidden="true"></i>Tel. 0711 / 39 11 11 14</p>
+            <p id='Anfahrt'>Anfahrt: Neckarstraße 11, 73728 Esslingen am Neckar</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.2951338176895!2d9.303254306027592!3d48.73805879430292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c13722ae8e1d%3A0x1ee1d2a49603c01f!2sBoutique%20Chantal!5e0!3m2!1sde!2sde!4v1718278984313!5m2!1sde!2sde" width="400" height="300" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+          </div>
+          
+
         </div>
         <div className="row">
           <div className="col-12">&copy; 2013 Boutique Chantal </div>
