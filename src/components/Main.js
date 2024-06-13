@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style/Main.scss'
-import AnfahrtPNG from './assets/media/anfahrt.PNG'
+// import AnfahrtPNG from './assets/media/anfahrt.PNG'
 import Logo from './assets/media/Logolucent.png'
 
 function Main() {
