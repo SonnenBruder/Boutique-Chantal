@@ -10,6 +10,138 @@ img {
   background: #f6eceb;
 }
 
+.collection-carousel {
+  touch-action: pan-y;
+}
+
+.collection-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 700ms ease,
+    visibility 700ms ease;
+}
+
+.collection-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.collection-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.035);
+  transition: transform 5s ease-out;
+}
+
+.collection-slide.is-active .collection-slide-image {
+  transform: scale(1);
+}
+
+.collection-slide-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 78%) 0%,
+    rgb(0 0 0 / 30%) 48%,
+    transparent 78%
+  );
+}
+
+.collection-caption {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 3.75rem;
+  left: 1.5rem;
+  z-index: 2;
+  text-shadow: 0 2px 14px rgb(0 0 0 / 55%);
+}
+
+.collection-controls {
+  position: absolute;
+  z-index: 10;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.375rem;
+}
+
+.collection-control {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255 255 255 / 38%);
+  border-radius: 9999px;
+  color: white;
+  background: rgb(0 0 0 / 42%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transition:
+    background-color 200ms ease,
+    transform 200ms ease;
+}
+
+.collection-control:hover {
+  background: rgb(93 12 31 / 92%);
+  transform: translateY(-1px);
+}
+
+.collection-control:focus-visible,
+.collection-indicator:focus-visible,
+.collection-carousel:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.collection-indicators {
+  position: absolute;
+  z-index: 10;
+  bottom: 0.75rem;
+  left: 50%;
+  display: flex;
+  gap: 0.125rem;
+  transform: translateX(-50%);
+}
+
+.collection-indicator {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  place-items: center;
+}
+
+.collection-indicator::before {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 58%);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 35%);
+  content: '';
+  transition:
+    width 200ms ease,
+    background-color 200ms ease;
+}
+
+.collection-indicator:hover::before {
+  background: rgb(255 255 255 / 85%);
+}
+
+.collection-indicator[aria-current='true']::before {
+  width: 1.4rem;
+  background: white;
+}
+
 .fade-in-up {
   animation: fadeInUp 1s ease-out forwards;
 }
@@ -34,6 +166,25 @@ img {
   scroll-snap-align: start;
 }
 
+@media (max-width: 639px) {
+  .collection-caption {
+    right: 1rem;
+    bottom: 3.5rem;
+    left: 1rem;
+  }
+
+  .collection-controls {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .collection-control {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-basis: 2.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -42,5 +193,43 @@ img {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ...existing code... */
+
+.review-carousel-viewport {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-behavior: auto;
+  scrollbar-width: none;
+}
+
+.review-carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid #e8ded2;
+  border-radius: 0.75rem;
+  background: #fbf1f1;
+  box-shadow: 0 1px 3px rgb(31 27 27 / 8%);
+}
+
+@media (min-width: 768px) {
+  .review-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-card {
+    flex-basis: calc((100% - 48px) / 3);
   }
 }

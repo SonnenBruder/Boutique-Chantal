@@ -54,11 +54,12 @@
           >
         </nav>
         <a
+          aria-label="Boutique Chantal anrufen"
           class="hidden md:inline-flex items-center gap-2 rounded-lg bg-primary px-unit-md py-unit-sm text-on-primary font-label-sm uppercase tracking-wider transition-colors hover:bg-primary-container"
-          href="#contact"
+          href="tel:+4971139111114"
         >
-          <span>Termin</span>
-          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+          <span>Anrufen</span>
+          <span class="material-symbols-outlined text-[20px]">call</span>
         </a>
         <button
           aria-controls="mobile-nav"
@@ -128,8 +129,7 @@
             fetchpriority="high"
             height="824"
             sizes="100vw"
-            src="assets/images/hero-editorial-960.jpg"
-            srcset="assets/images/hero-editorial-640.jpg 640w, assets/images/hero-editorial-960.jpg 960w, assets/images/hero-editorial-1440.jpg 1440w"
+            src="assets/images/RedDress02.jpg"
             width="1440"
           />
           <div
@@ -141,8 +141,7 @@
         >
           <span
             class="text-white/80 font-label-sm uppercase tracking-widest mb-unit-xs block"
-            >Lookbook 2024</span
-          >
+          ></span>
           <h1
             class="font-hero-h1-mobile text-hero-h1-mobile md:font-hero-h1 md:text-hero-h1 text-white leading-tight mb-unit-sm max-w-3xl"
           >
@@ -150,17 +149,20 @@
           </h1>
           <div class="w-12 h-0.5 bg-secondary-fixed-dim mb-unit-md"></div>
           <p class="text-white/90 font-body text-body max-w-reading-max italic">
-            Handverlesene Roben, Cocktailkleider und persönliche Stilberatung
-            in Esslingen.
+            Handverlesene Roben, Cocktailkleider und persönliche Stilberatung in
+            Esslingen.
           </p>
           <div class="mt-unit-md flex flex-col sm:flex-row gap-unit-sm">
             <a
               class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-unit-md py-unit-sm text-on-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary-container"
               href="#contact"
             >
-              <span>Termin anfragen</span>
-              <span class="material-symbols-outlined text-[20px]">event</span>
+              <span>Öffnungszeiten</span>
+              <span class="material-symbols-outlined text-[20px]"
+                >schedule</span
+              >
             </a>
+
             <a
               class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/50 px-unit-md py-unit-sm text-white font-label-md uppercase tracking-wider transition-colors hover:bg-white/10"
               href="#abendmode"
@@ -171,7 +173,6 @@
           </div>
         </div>
       </section>
-
       <section
         class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-ivory snap-section"
         id="abendmode"
@@ -179,29 +180,171 @@
         <div
           class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[minmax(0,1fr)_380px] md:items-end"
         >
-          <div class="relative group overflow-hidden rounded-xl border border-pearl bg-surface-container-low">
-            <img
-              alt="Abendmode in zarten Stofflagen"
-              class="w-full aspect-[4/5] md:aspect-[5/4] object-cover transition-transform duration-700 group-hover:scale-105"
-              decoding="async"
-              height="549"
-              loading="lazy"
-              sizes="(min-width: 768px) 62vw, 100vw"
-              src="assets/images/abendmode-gown-720.jpg"
-              srcset="assets/images/abendmode-gown-480.jpg 480w, assets/images/abendmode-gown-720.jpg 720w, assets/images/abendmode-gown-960.jpg 960w"
-              width="960"
-            />
-            <div
-              class="absolute bottom-0 left-0 right-0 p-unit-md bg-black/25 backdrop-blur-md border-t border-white/20"
+          <div
+            aria-label="Highlights unserer Kollektion"
+            aria-roledescription="Karussell"
+            class="collection-carousel relative aspect-[4/5] overflow-hidden rounded-xl border border-pearl bg-surface-container-low md:aspect-[5/4]"
+            data-collection-carousel
+            role="region"
+            tabindex="0"
+          >
+            <figure
+              aria-hidden="false"
+              aria-label="1 von 3: Stoff und Styling"
+              aria-roledescription="Folie"
+              class="collection-slide is-active"
+              data-carousel-slide
+              role="group"
             >
-              <h2 class="font-headline-sm text-white">
-                Midnight Silk Silhouette
-              </h2>
-              <p class="text-white/80 font-label-sm uppercase mt-1">
-                Neu eingetroffen
-              </p>
+              <img
+                alt="Kleider, Stoffmuster und Schuhe in einer hellen Boutique"
+                class="collection-slide-image object-[65%_center]"
+                decoding="async"
+                loading="lazy"
+                sizes="(min-width: 768px) 62vw, 100vw"
+                src="assets/images/Collection01.jpg"
+              />
+              <div class="collection-slide-shade"></div>
+              <figcaption class="collection-caption">
+                <h3 class="font-headline-sm text-headline-sm text-white">
+                  Stoff & Styling
+                </h3>
+                <p class="mt-1 max-w-md font-label-sm text-white/85">
+                  Feine Texturen und Accessoires, stimmig bis ins Detail.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure
+              aria-hidden="true"
+              aria-label="2 von 3: Großer Auftritt"
+              aria-roledescription="Folie"
+              class="collection-slide"
+              data-carousel-slide
+              role="group"
+            >
+              <img
+                alt="Vier festliche Abendkleider auf Schaufensterpuppen"
+                class="collection-slide-image object-center"
+                decoding="async"
+                loading="lazy"
+                sizes="(min-width: 768px) 62vw, 100vw"
+                src="assets/images/Collection02.jpg"
+              />
+              <div class="collection-slide-shade"></div>
+              <figcaption class="collection-caption">
+                <h3 class="font-headline-sm text-headline-sm text-white">
+                  Großer Auftritt
+                </h3>
+                <p class="mt-1 max-w-md font-label-sm text-white/85">
+                  Ausdrucksstarke Silhouetten für besondere Abende.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure
+              aria-hidden="true"
+              aria-label="3 von 3: Rote Eleganz"
+              aria-roledescription="Folie"
+              class="collection-slide"
+              data-carousel-slide
+              role="group"
+            >
+              <img
+                alt="Rotes Abendkleid zwischen goldenen Spiegeln und Kronleuchtern"
+                class="collection-slide-image object-[75%_center]"
+                decoding="async"
+                loading="lazy"
+                sizes="(min-width: 768px) 62vw, 100vw"
+                src="assets/images/Collection03.jpg"
+              />
+              <div class="collection-slide-shade"></div>
+              <figcaption class="collection-caption">
+                <h3 class="font-headline-sm text-headline-sm text-white">
+                  Rote Eleganz
+                </h3>
+                <p class="mt-1 max-w-md font-label-sm text-white/85">
+                  Farbe, Glanz und feine Details für den großen Moment.
+                </p>
+              </figcaption>
+            </figure>
+
+            <div
+              aria-label="Karussell steuern"
+              class="collection-controls"
+              role="group"
+            >
+              <button
+                aria-label="Vorheriges Bild"
+                class="collection-control"
+                data-carousel-previous
+                title="Vorheriges Bild"
+                type="button"
+              >
+                <span aria-hidden="true" class="material-symbols-outlined">
+                  chevron_left
+                </span>
+              </button>
+
+              <button
+                aria-label="Automatischen Wechsel pausieren"
+                aria-pressed="false"
+                class="collection-control"
+                data-carousel-toggle
+                title="Automatischen Wechsel pausieren"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                  class="material-symbols-outlined"
+                  data-carousel-toggle-icon
+                >
+                  pause
+                </span>
+              </button>
+
+              <button
+                aria-label="Nächstes Bild"
+                class="collection-control"
+                data-carousel-next
+                title="Nächstes Bild"
+                type="button"
+              >
+                <span aria-hidden="true" class="material-symbols-outlined">
+                  chevron_right
+                </span>
+              </button>
+            </div>
+
+            <div
+              aria-label="Bild auswählen"
+              class="collection-indicators"
+              role="group"
+            >
+              <button
+                aria-current="true"
+                aria-label="Bild 1: Stoff und Styling"
+                class="collection-indicator"
+                data-carousel-indicator="0"
+                type="button"
+              ></button>
+              <button
+                aria-current="false"
+                aria-label="Bild 2: Großer Auftritt"
+                class="collection-indicator"
+                data-carousel-indicator="1"
+                type="button"
+              ></button>
+              <button
+                aria-current="false"
+                aria-label="Bild 3: Rote Eleganz"
+                class="collection-indicator"
+                data-carousel-indicator="2"
+                type="button"
+              ></button>
             </div>
           </div>
+
           <div class="md:pb-unit-md">
             <p
               class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
@@ -219,9 +362,21 @@
               Oper, Hochzeit und festliche Empfänge.
             </p>
             <div class="flex flex-wrap gap-unit-sm">
-              <span class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface">Seide</span>
-              <span class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface">Satin</span>
-              <span class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface">Plus Beratung</span>
+              <span
+                class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface"
+              >
+                Seide
+              </span>
+              <span
+                class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface"
+              >
+                Satin
+              </span>
+              <span
+                class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface"
+              >
+                Plus Beratung
+              </span>
             </div>
           </div>
         </div>
@@ -245,7 +400,9 @@
             >
               Cocktail<br />& Chic
             </h2>
-            <p class="font-body text-on-surface-variant max-w-reading-max mb-unit-md">
+            <p
+              class="font-body text-on-surface-variant max-w-reading-max mb-unit-md"
+            >
               Kurze Kleider, klare Schnitte und raffinierte Details für
               Empfänge, standesamtliche Feiern und Abende, die nicht nach
               Standard aussehen sollen.
@@ -269,8 +426,11 @@
               height="701"
               loading="lazy"
               sizes="(min-width: 768px) 45vw, 80vw"
-              src="assets/images/cocktail-dress-720.jpg"
-              srcset="assets/images/cocktail-dress-480.jpg 480w, assets/images/cocktail-dress-720.jpg 720w, assets/images/cocktail-dress-960.jpg 960w"
+              src="assets/images/Cocktail01.jpg"
+              srcset="
+                assets/images/Cocktail01.jpg,
+                assets/images/Cocktail02.jpg
+              "
               width="960"
             />
           </div>
@@ -278,7 +438,7 @@
       </section>
 
       <section
-        class="relative min-h-[82vh] flex flex-col justify-center overflow-hidden snap-section"
+        class="relative min-h-[82vh] flex flex-col justify-start overflow-hidden snap-section"
         id="besuch"
       >
         <div class="absolute inset-0 bg-surface-container-low">
@@ -289,8 +449,8 @@
             height="1440"
             loading="lazy"
             sizes="100vw"
-            src="assets/images/boutique-interior-960.jpg"
-            srcset="assets/images/boutique-interior-640.jpg 640w, assets/images/boutique-interior-960.jpg 960w, assets/images/boutique-interior-1440.jpg 1440w"
+            src="assets/images/RedCouch.jpg"
+            srcset="assets/images/RedCouch.jpg, assets/images/Comfort.jpg"
             width="1440"
           />
           <div class="absolute inset-0 bg-ivory/86"></div>
@@ -310,7 +470,9 @@
               Ihr Moment
             </h2>
             <div class="w-16 h-px bg-primary mb-unit-lg"></div>
-            <p class="font-body text-body text-on-surface-variant leading-relaxed max-w-reading-max">
+            <p
+              class="font-body text-body text-on-surface-variant leading-relaxed max-w-reading-max"
+            >
               In privater Atmosphäre nehmen wir uns Zeit für Stoff, Anlass,
               Passform und das gute Gefühl, wenn ein Kleid wirklich stimmt.
             </p>
@@ -319,24 +481,32 @@
             <div
               class="flex items-center gap-3 rounded-lg border border-pearl bg-white/85 p-unit-md backdrop-blur-sm"
             >
-              <span class="material-symbols-outlined text-secondary">event</span>
+              <span class="material-symbols-outlined text-secondary"
+                >event</span
+              >
               <div>
                 <p class="font-label-md">Persönlicher Termin</p>
-                <p class="text-on-surface-variant font-label-sm">Nach Vereinbarung</p>
+                <p class="text-on-surface-variant font-label-sm">
+                  Nach Vereinbarung
+                </p>
               </div>
             </div>
             <div
               class="flex items-center gap-3 rounded-lg border border-pearl bg-white/85 p-unit-md backdrop-blur-sm"
             >
-              <span class="material-symbols-outlined text-secondary">location_on</span>
+              <span class="material-symbols-outlined text-secondary"
+                >location_on</span
+              >
               <div>
                 <p class="font-label-md">Esslingen am Neckar</p>
-                <p class="text-on-surface-variant font-label-sm">Innere Brücke 12</p>
+                <p class="text-on-surface-variant font-label-sm">
+                  Neckarstraße 11
+                </p>
               </div>
             </div>
             <a
               class="inline-flex items-center justify-center gap-2 rounded-lg border border-primary px-unit-md py-unit-sm text-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary hover:text-on-primary"
-              href="https://www.google.com/maps/search/?api=1&query=Innere%20Br%C3%BCcke%2012%2C%2073728%20Esslingen%20am%20Neckar"
+              href="https://www.google.com/maps/search/?api=1&query=Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
               rel="noreferrer"
               target="_blank"
             >
@@ -346,129 +516,166 @@
           </div>
         </div>
       </section>
+      <section
+        class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-ivory snap-section"
+        id="reviews"
+      >
+        <div class="max-w-container-max mx-auto">
+          <div class="mx-auto mb-unit-lg max-w-reading-max text-center">
+            <h2
+              class="mb-unit-sm font-page-h1-mobile text-page-h1-mobile uppercase text-primary md:font-page-h1 md:text-page-h1"
+            >
+              Stimmen unserer Kundinnen
+            </h2>
 
+            <p class="font-body text-body text-on-surface-variant">
+              Persönliche Erfahrungen mit unserer Beratung, Auswahl und
+              Atmosphäre.
+            </p>
+          </div>
+
+          <div data-review-carousel>
+            <div
+              aria-busy="true"
+              aria-label="Google-Bewertungen"
+              aria-roledescription="Karussell"
+              class="review-carousel-viewport"
+              data-review-viewport
+              role="region"
+              tabindex="0"
+            >
+              <p
+                class="w-full py-unit-lg text-center font-body text-on-surface-variant"
+                data-review-status
+              >
+                Bewertungen werden geladen …
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-unit-md flex justify-center">
+            <a
+              aria-label="Google-Bewertungen der Boutique Chantal ansehen"
+              class="inline-flex items-center justify-center gap-2 font-label-md uppercase tracking-wider text-primary hover:underline"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Boutique%20Chantal%2C%20Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span>Alle Bewertungen auf Google</span>
+              <span class="material-symbols-outlined text-[20px]">
+                open_in_new
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
       <section
         class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-white snap-section"
         id="contact"
       >
         <div
-          class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[360px_minmax(0,1fr)]"
+          class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[380px_minmax(0,1fr)] md:items-start"
         >
-          <div class="rounded-xl bg-surface-container-low p-unit-md border border-pearl h-fit">
+          <div
+            class="rounded-xl border border-pearl bg-surface-container-low p-unit-md"
+          >
             <p
               class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
             >
-              Besuch planen
+              Termin vereinbaren
             </p>
-            <h2 class="font-headline-md text-headline-md text-primary mb-unit-sm">
-              Rendezvous
+
+            <h2
+              class="font-headline-md text-headline-md text-primary mb-unit-sm"
+            >
+              Ein Anruf genügt
             </h2>
-            <p class="text-on-surface-variant font-body mb-unit-md">
-              Vereinbaren Sie Ihren individuellen Beratungstermin. Wir melden
-              uns persönlich zur Abstimmung zurück.
+
+            <p class="font-body text-on-surface-variant mb-unit-md">
+              Rufen Sie uns an, um Ihren persönlichen Beratungstermin direkt mit
+              uns abzustimmen.
             </p>
-            <dl class="space-y-unit-sm text-on-surface-variant font-label-sm">
+
+            <a
+              aria-label="Boutique Chantal unter 0711 39111114 anrufen"
+              class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-unit-md py-unit-sm text-on-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary-container"
+              href="tel:+4971139111114"
+            >
+              <span class="material-symbols-outlined text-[20px]">call</span>
+              <span>0711 39111114</span>
+            </a>
+
+            <dl
+              class="mt-unit-md space-y-unit-md text-on-surface-variant font-label-sm"
+            >
+              <div>
+                <dt class="text-on-surface font-label-md mb-unit-xs">
+                  Öffnungszeiten
+                </dt>
+                <dd class="grid gap-unit-xs">
+                  <span class="flex justify-between gap-unit-sm">
+                    <span>Montag–Freitag</span>
+                    <span>10:00–18:00</span>
+                  </span>
+                  <span class="flex justify-between gap-unit-sm">
+                    <span>Samstag</span>
+                    <span>10:00–14:00</span>
+                  </span>
+                  <span class="flex justify-between gap-unit-sm">
+                    <span>Sonntag</span>
+                    <span>Geschlossen</span>
+                  </span>
+                </dd>
+              </div>
+
               <div>
                 <dt class="text-on-surface font-label-md">Adresse</dt>
-                <dd>Innere Brücke 12, 73728 Esslingen am Neckar</dd>
-              </div>
-              <div>
-                <dt class="text-on-surface font-label-md">Termine</dt>
-                <dd>Persönliche Beratung nach Vereinbarung</dd>
+                <dd>
+                  <address class="not-italic">
+                    Neckarstraße 11<br />
+                    73728 Esslingen am Neckar
+                  </address>
+                </dd>
               </div>
             </dl>
           </div>
-          <form class="space-y-unit-md" data-booking-form>
-            <div class="grid gap-unit-md md:grid-cols-2">
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="name"
-                  >Name</label
-                >
-                <input
-                  autocomplete="name"
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="name"
-                  name="name"
-                  placeholder="Ihren Namen eingeben"
-                  required
-                  type="text"
-                />
-              </div>
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="email"
-                  >E-Mail</label
-                >
-                <input
-                  autocomplete="email"
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="email"
-                  name="email"
-                  placeholder="ihre@email.de"
-                  required
-                  type="email"
-                />
-              </div>
-            </div>
-            <div class="grid gap-unit-md md:grid-cols-2">
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="date"
-                  >Wunschdatum</label
-                >
-                <input
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="date"
-                  name="date"
-                  required
-                  type="date"
-                />
-              </div>
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="occasion"
-                  >Anliegen</label
-                >
-                <select
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="occasion"
-                  name="occasion"
-                >
-                  <option>Abendmode Beratung</option>
-                  <option>Cocktailkleider</option>
-                  <option>Brautjungfern</option>
-                  <option>Accessoires</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label
-                class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                for="message"
-                >Nachricht</label
-              >
-              <textarea
-                class="w-full min-h-28 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                id="message"
-                name="message"
-                placeholder="Anlass, Größe oder erste Wünsche"
-              ></textarea>
-            </div>
-            <button
-              class="w-full md:w-auto inline-flex items-center justify-center gap-2 py-unit-md px-unit-lg bg-primary text-on-primary font-label-md uppercase tracking-widest rounded-lg shadow-lg active:scale-95 transition-transform hover:bg-primary-container"
-              type="submit"
+
+          <div
+            class="overflow-hidden rounded-xl border border-pearl bg-surface-container-low shadow-sm"
+          >
+            <iframe
+              allowfullscreen
+              class="h-[400px] w-full border-0 md:h-[480px]"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465.1490547561775!2d9.303311479732498!3d48.73834013349923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c13722ae8e1d%3A0x1ee1d2a49603c01f!2sBoutique%20Chantal!5e0!3m2!1sde!2sde!4v1784798240435!5m2!1sde!2sde"
+              styletitle="Karte zur Boutique Chantal in Esslingen"
+            ></iframe>
+
+            <div
+              class="flex flex-col gap-unit-sm p-unit-sm sm:flex-row sm:items-center sm:justify-between"
             >
-              <span>Termin anfragen</span>
-              <span class="material-symbols-outlined text-[20px]">send</span>
-            </button>
-          </form>
+              <p class="font-label-sm text-on-surface-variant">
+                Neckarstraße 11, 73728 Esslingen am Neckar
+              </p>
+
+              <a
+                class="inline-flex items-center gap-2 font-label-sm uppercase tracking-wider text-primary hover:underline"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span>Route öffnen</span>
+                <span class="material-symbols-outlined text-[20px]">
+                  open_in_new
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- ...existing code... -->
     </main>
 
     <footer
@@ -482,15 +689,62 @@
             Boutique Chantal
           </h2>
           <p class="font-body text-on-surface-variant text-sm">
-            Innere Brücke 12, 73728 Esslingen am Neckar
+            Neckarstraße 11, 73728 Esslingen am Neckar
           </p>
-          <div class="flex gap-unit-md mt-unit-md">
-            <a class="text-secondary hover:underline font-label-sm" href="#"
-              >Instagram</a
+          <div class="flex gap-unit-sm mt-unit-md">
+            <a
+              aria-label="Boutique Chantal auf Instagram"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-on-primary"
+              href="https://www.instagram.com/boutique._chantal/?hl=de"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Instagram"
             >
-            <a class="text-secondary hover:underline font-label-sm" href="#"
-              >Facebook</a
+              <svg
+                aria-hidden="true"
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <rect height="18" rx="5" width="18" x="3" y="3"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  fill="currentColor"
+                  r="1"
+                  stroke="none"
+                ></circle>
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+
+            <a
+              aria-label="Boutique Chantal auf Facebook"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-on-primary"
+              href="https://www.facebook.com/esslingen73728/?locale=de_DE"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Facebook"
             >
+              <svg
+                aria-hidden="true"
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M14 21v-8h3.5l.5-4h-4V7c0-1.3.7-2 2-2h2V1.5h-3c-3.3 0-5 2.2-5 5.5v2H7v4h3v8"
+                ></path>
+              </svg>
+              <span class="sr-only">Facebook</span>
+            </a>
           </div>
         </div>
         <div class="grid grid-cols-2 gap-unit-md text-left md:text-right">
