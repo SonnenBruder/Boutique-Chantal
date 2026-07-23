@@ -427,10 +427,7 @@
               loading="lazy"
               sizes="(min-width: 768px) 45vw, 80vw"
               src="assets/images/Cocktail01.jpg"
-              srcset="
-                assets/images/Cocktail01.jpg,
-                assets/images/Cocktail02.jpg
-              "
+              srcset="assets/images/Cocktail01.jpg"
               width="960"
             />
           </div>
@@ -450,7 +447,7 @@
             loading="lazy"
             sizes="100vw"
             src="assets/images/RedCouch.jpg"
-            srcset="assets/images/RedCouch.jpg, assets/images/Comfort.jpg"
+            srcset="assets/images/RedCouch.jpg"
             width="1440"
           />
           <div class="absolute inset-0 bg-ivory/86"></div>
@@ -522,10 +519,37 @@
           </div>
         </div>
       </section>
-      <section class="py-unit-xl bg-ivory snap-section" id="reviews">
+      <section
+        class="relative isolate overflow-hidden py-unit-xl snap-section"
+        id="reviews"
+      >
+        <!-- Decorative background -->
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+          <img
+            alt=""
+            class="h-full w-full object-cover object-[45%_center]"
+            decoding="async"
+            height="768"
+            loading="lazy"
+            src="assets/images/reviews.jpg"
+            width="1152"
+          />
+
+          <!-- Light overlay for readable text -->
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-ivory/20 via-ivory/45 to-ivory/65"
+          ></div>
+        </div>
+
         <div
           class="mx-auto mb-unit-lg max-w-reading-max px-gutter-mobile text-center md:px-gutter-desktop"
         >
+          <p
+            class="mb-unit-xs font-label-sm uppercase tracking-widest text-on-surface-variant"
+          >
+            Google Bewertungen
+          </p>
+
           <h2
             class="mb-unit-sm font-page-h1-mobile text-page-h1-mobile uppercase text-primary md:font-page-h1 md:text-page-h1"
           >
@@ -562,15 +586,15 @@
         >
           <a
             aria-label="Google-Bewertungen der Boutique Chantal ansehen"
-            class="inline-flex items-center justify-center gap-2 font-label-md uppercase tracking-wider text-primary hover:underline"
+            class="inline-flex items-center justify-center gap-2 rounded-lg bg-ivory/75 px-unit-md py-unit-sm font-label-md uppercase tracking-wider text-primary backdrop-blur-sm transition-colors hover:bg-primary hover:text-on-primary"
             href="https://www.google.com/maps/search/?api=1&amp;query=Boutique%20Chantal%2C%20Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span>Alle Bewertungen auf Google</span>
-            <span class="material-symbols-outlined text-[20px]">
-              open_in_new
-            </span>
+            <span class="material-symbols-outlined text-[20px]"
+              >open_in_new</span
+            >
           </a>
         </div>
       </section>
