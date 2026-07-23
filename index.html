@@ -458,18 +458,23 @@
         <div
           class="relative px-gutter-mobile md:px-gutter-desktop py-unit-xl max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[minmax(0,1fr)_420px] md:items-center"
         >
-          <div>
+          <div
+            class="rounded-xl border border-white/20 bg-white/45 p-unit-md shadow-sm backdrop-blur-sm"
+          >
             <p
               class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
             >
               Private Anprobe
             </p>
+
             <h2
               class="font-page-h1-mobile text-page-h1-mobile md:font-page-h1 md:text-page-h1 text-primary mb-unit-md uppercase"
             >
               Ihr Moment
             </h2>
+
             <div class="w-16 h-px bg-primary mb-unit-lg"></div>
+
             <p
               class="font-body text-body text-on-surface-variant leading-relaxed max-w-reading-max"
             >
@@ -479,7 +484,7 @@
           </div>
           <div class="grid gap-unit-sm">
             <div
-              class="flex items-center gap-3 rounded-lg border border-pearl bg-white/85 p-unit-md backdrop-blur-sm"
+              class="flex items-center gap-3 rounded-lg border border-pearl bg-white/45 p-unit-md backdrop-blur-sm"
             >
               <span class="material-symbols-outlined text-secondary"
                 >event</span
@@ -492,7 +497,7 @@
               </div>
             </div>
             <div
-              class="flex items-center gap-3 rounded-lg border border-pearl bg-white/85 p-unit-md backdrop-blur-sm"
+              class="flex items-center gap-3 rounded-lg border border-pearl bg-white/45 p-unit-md backdrop-blur-sm"
             >
               <span class="material-symbols-outlined text-secondary"
                 >location_on</span
@@ -506,7 +511,7 @@
               </div>
             </div>
             <a
-              class="inline-flex items-center justify-center gap-2 rounded-lg border border-primary px-unit-md py-unit-sm text-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary hover:text-on-primary"
+              class="inline-flex items-center justify-center gap-2 rounded-lg border bg-primary/25 border-primary px-unit-md py-unit-sm text-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary hover:text-on-primary"
               href="https://www.google.com/maps/search/?api=1&query=Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
               rel="noreferrer"
               target="_blank"
@@ -517,57 +522,56 @@
           </div>
         </div>
       </section>
-      <section
-        class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-ivory snap-section"
-        id="reviews"
-      >
-        <div class="max-w-container-max mx-auto">
-          <div class="mx-auto mb-unit-lg max-w-reading-max text-center">
-            <h2
-              class="mb-unit-sm font-page-h1-mobile text-page-h1-mobile uppercase text-primary md:font-page-h1 md:text-page-h1"
-            >
-              Stimmen unserer Kundinnen
-            </h2>
+      <section class="py-unit-xl bg-ivory snap-section" id="reviews">
+        <div
+          class="mx-auto mb-unit-lg max-w-reading-max px-gutter-mobile text-center md:px-gutter-desktop"
+        >
+          <h2
+            class="mb-unit-sm font-page-h1-mobile text-page-h1-mobile uppercase text-primary md:font-page-h1 md:text-page-h1"
+          >
+            Stimmen unserer Kundinnen
+          </h2>
 
-            <p class="font-body text-body text-on-surface-variant">
-              Persönliche Erfahrungen mit unserer Beratung, Auswahl und
-              Atmosphäre.
+          <p class="font-body text-body text-on-surface-variant">
+            Persönliche Erfahrungen mit unserer Beratung, Auswahl und
+            Atmosphäre.
+          </p>
+        </div>
+
+        <div class="w-full" data-review-carousel>
+          <div
+            aria-busy="true"
+            aria-label="Google-Bewertungen"
+            aria-roledescription="Karussell"
+            class="review-carousel-viewport w-full"
+            data-review-viewport
+            role="region"
+            tabindex="0"
+          >
+            <p
+              class="w-full py-unit-lg text-center font-body text-on-surface-variant"
+              data-review-status
+            >
+              Bewertungen werden geladen …
             </p>
           </div>
+        </div>
 
-          <div data-review-carousel>
-            <div
-              aria-busy="true"
-              aria-label="Google-Bewertungen"
-              aria-roledescription="Karussell"
-              class="review-carousel-viewport"
-              data-review-viewport
-              role="region"
-              tabindex="0"
-            >
-              <p
-                class="w-full py-unit-lg text-center font-body text-on-surface-variant"
-                data-review-status
-              >
-                Bewertungen werden geladen …
-              </p>
-            </div>
-          </div>
-
-          <div class="mt-unit-md flex justify-center">
-            <a
-              aria-label="Google-Bewertungen der Boutique Chantal ansehen"
-              class="inline-flex items-center justify-center gap-2 font-label-md uppercase tracking-wider text-primary hover:underline"
-              href="https://www.google.com/maps/search/?api=1&amp;query=Boutique%20Chantal%2C%20Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span>Alle Bewertungen auf Google</span>
-              <span class="material-symbols-outlined text-[20px]">
-                open_in_new
-              </span>
-            </a>
-          </div>
+        <div
+          class="mt-unit-md flex justify-center px-gutter-mobile md:px-gutter-desktop"
+        >
+          <a
+            aria-label="Google-Bewertungen der Boutique Chantal ansehen"
+            class="inline-flex items-center justify-center gap-2 font-label-md uppercase tracking-wider text-primary hover:underline"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Boutique%20Chantal%2C%20Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span>Alle Bewertungen auf Google</span>
+            <span class="material-symbols-outlined text-[20px]">
+              open_in_new
+            </span>
+          </a>
         </div>
       </section>
       <section

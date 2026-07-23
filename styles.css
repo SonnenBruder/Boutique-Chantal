@@ -213,6 +213,8 @@ img {
 
 .review-card {
   display: flex;
+  min-width: 0;
+  max-width: 400px;
   flex: 0 0 100%;
   flex-direction: column;
   padding: 24px;
