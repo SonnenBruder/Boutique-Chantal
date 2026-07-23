@@ -16,7 +16,9 @@ img {
 .collection-carousel {
   touch-action: pan-y;
 }
-
+.site-logo {
+  background: transparent;
+}
 .collection-slide {
   position: absolute;
   inset: 0;
