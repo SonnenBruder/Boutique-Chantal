@@ -1,538 +1,211 @@
 <!doctype html>
-<html class="scroll-smooth" lang="de">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      content="Boutique Chantal in Esslingen: handverlesene Abendmode, Cocktailkleider und persönliche Stilberatung für besondere Anlässe."
       name="description"
+      content="Boutique Chantal in Esslingen: handverlesene Abendmode, Cocktailkleider und persönliche Stilberatung für besondere Anlässe."
     />
-    <title>Boutique Chantal | Abendmode & Stilberatung in Esslingen</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="script.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Source+Sans+3:wght@300;400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" />
+    <meta name="theme-color" content="#6f1724" />
+    <title>Boutique Chantal | Abendmode in Esslingen</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ClothingStore",
+        "name": "Boutique Chantal",
+        "telephone": "+4971139111114",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Neckarstraße 11",
+          "postalCode": "73728",
+          "addressLocality": "Esslingen am Neckar"
+        }
+      }
+    </script>
   </head>
-  <body
-    class="bg-ivory text-on-surface font-body selection:bg-rose selection:text-white overflow-x-hidden"
-  >
-    <header
-      class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md px-gutter-mobile py-unit-sm transition-all duration-300"
-    >
-      <div
-        class="flex items-center justify-between gap-unit-md max-w-container-max mx-auto"
-      >
-        <a
-          class="font-headline-md text-headline-sm italic text-primary"
-          href="#top"
-          >Boutique Chantal</a
-        >
-        <nav
-          aria-label="Hauptnavigation"
-          class="hidden md:flex items-center gap-unit-md text-on-surface-variant font-label-sm uppercase tracking-wider"
-        >
-          <a class="hover:text-primary transition-colors" href="#abendmode"
-            >Abendmode</a
-          >
-          <a class="hover:text-primary transition-colors" href="#cocktail"
-            >Cocktail</a
-          >
-          <a class="hover:text-primary transition-colors" href="#besuch"
-            >Besuch</a
-          >
-          <a class="hover:text-primary transition-colors" href="#contact"
-            >Kontakt</a
-          >
-        </nav>
-        <a
-          class="hidden md:inline-flex items-center gap-2 rounded-lg bg-primary px-unit-md py-unit-sm text-on-primary font-label-sm uppercase tracking-wider transition-colors hover:bg-primary-container"
-          href="#contact"
-        >
-          <span>Termin</span>
-          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Boutique Chantal – Startseite">
+          <span>Boutique</span>
+          <strong>Chantal</strong>
         </a>
-        <button
-          aria-controls="mobile-nav"
-          aria-expanded="false"
-          aria-label="Navigation öffnen"
-          class="p-2 text-primary md:hidden"
-          id="mobile-menu-toggle"
-        >
-          <span class="material-symbols-outlined">menu</span>
-        </button>
+
+        <nav class="desktop-nav" aria-label="Hauptnavigation">
+          <a href="#erwartet">Was Sie erwartet</a>
+          <a href="#abendmode">Abendmode</a>
+          <a href="#cocktailkleider">Cocktailkleider</a>
+          <a href="#besuch">Besuch</a>
+        </nav>
+
+        <a class="header-phone" href="tel:+4971139111114">0711 39111114</a>
+
+        <details class="mobile-menu">
+          <summary>Menü</summary>
+          <nav aria-label="Mobile Navigation">
+            <a href="#erwartet">Was Sie erwartet</a>
+            <a href="#abendmode">Abendmode</a>
+            <a href="#cocktailkleider">Cocktailkleider</a>
+            <a href="#besuch">Besuch</a>
+            <a href="tel:+4971139111114">0711 39111114</a>
+          </nav>
+        </details>
       </div>
     </header>
 
-    <div
-      aria-hidden="true"
-      class="fixed inset-0 bg-ivory z-[60] flex flex-col items-center justify-center gap-unit-md translate-x-full transition-transform duration-500 md:hidden"
-      id="mobile-nav"
-    >
-      <button
-        aria-label="Navigation schließen"
-        class="absolute top-unit-sm right-gutter-mobile p-2 text-primary"
-        id="mobile-menu-close"
-      >
-        <span class="material-symbols-outlined text-[32px]">close</span>
-      </button>
-      <a
-        class="font-headline-sm text-headline-md text-primary"
-        data-nav-link
-        href="#abendmode"
-        >Abendmode</a
-      >
-      <a
-        class="font-headline-sm text-headline-md text-on-surface-variant"
-        data-nav-link
-        href="#cocktail"
-        >Cocktail</a
-      >
-      <a
-        class="font-headline-sm text-headline-md text-on-surface-variant"
-        data-nav-link
-        href="#besuch"
-        >Besuch</a
-      >
-      <a
-        class="font-headline-sm text-headline-md text-on-surface-variant"
-        data-nav-link
-        href="#contact"
-        >Kontakt</a
-      >
-      <a
-        class="mt-unit-lg rounded-lg bg-primary px-unit-md py-unit-sm text-on-primary font-label-md uppercase tracking-wider"
-        data-nav-link
-        href="#contact"
-        >Termin vereinbaren</a
-      >
-    </div>
-
-    <main class="w-full" id="top">
-      <section
-        class="relative min-h-[100svh] md:min-h-[92vh] w-full flex flex-col justify-end overflow-hidden snap-section"
-      >
-        <div class="absolute inset-0 bg-surface-container-low">
-          <img
-            alt="Model in eleganter Abendrobe"
-            class="h-full w-full object-cover"
-            decoding="async"
-            fetchpriority="high"
-            height="824"
-            sizes="100vw"
-            src="assets/images/hero-editorial-960.jpg"
-            srcset="assets/images/hero-editorial-640.jpg 640w, assets/images/hero-editorial-960.jpg 960w, assets/images/hero-editorial-1440.jpg 1440w"
-            width="1440"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10"
-          ></div>
-        </div>
-        <div
-          class="relative px-gutter-mobile md:px-gutter-desktop pb-unit-xl md:pb-[120px] max-w-container-max w-full mx-auto fade-in-up"
-        >
-          <span
-            class="text-white/80 font-label-sm uppercase tracking-widest mb-unit-xs block"
-            >Lookbook 2024</span
-          >
-          <h1
-            class="font-hero-h1-mobile text-hero-h1-mobile md:font-hero-h1 md:text-hero-h1 text-white leading-tight mb-unit-sm max-w-3xl"
-          >
-            Exklusive Eleganz für besondere Abende
-          </h1>
-          <div class="w-12 h-0.5 bg-secondary-fixed-dim mb-unit-md"></div>
-          <p class="text-white/90 font-body text-body max-w-reading-max italic">
-            Handverlesene Roben, Cocktailkleider und persönliche Stilberatung
-            in Esslingen.
+    <main id="inhalt">
+      <section class="hero section-frame" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Boutique Chantal · Esslingen am Neckar</p>
+          <h1 id="hero-title">Abendmode<br />in Esslingen.</h1>
+          <p class="hero-intro">
+            Handverlesene Abendmode, Cocktailkleider und persönliche
+            Stilberatung für besondere Anlässe.
           </p>
-          <div class="mt-unit-md flex flex-col sm:flex-row gap-unit-sm">
-            <a
-              class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-unit-md py-unit-sm text-on-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary-container"
-              href="#contact"
-            >
-              <span>Termin anfragen</span>
-              <span class="material-symbols-outlined text-[20px]">event</span>
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:+4971139111114">
+              Jetzt anrufen
             </a>
-            <a
-              class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/50 px-unit-md py-unit-sm text-white font-label-md uppercase tracking-wider transition-colors hover:bg-white/10"
-              href="#abendmode"
-            >
-              <span>Kollektion ansehen</span>
-              <span class="material-symbols-outlined text-[20px]">south</span>
-            </a>
+            <a class="text-link" href="#besuch">Besuch planen</a>
           </div>
         </div>
-      </section>
 
-      <section
-        class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-ivory snap-section"
-        id="abendmode"
-      >
-        <div
-          class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[minmax(0,1fr)_380px] md:items-end"
-        >
-          <div class="relative group overflow-hidden rounded-xl border border-pearl bg-surface-container-low">
-            <img
-              alt="Abendmode in zarten Stofflagen"
-              class="w-full aspect-[4/5] md:aspect-[5/4] object-cover transition-transform duration-700 group-hover:scale-105"
-              decoding="async"
-              height="549"
-              loading="lazy"
-              sizes="(min-width: 768px) 62vw, 100vw"
-              src="assets/images/abendmode-gown-720.jpg"
-              srcset="assets/images/abendmode-gown-480.jpg 480w, assets/images/abendmode-gown-720.jpg 720w, assets/images/abendmode-gown-960.jpg 960w"
-              width="960"
-            />
-            <div
-              class="absolute bottom-0 left-0 right-0 p-unit-md bg-black/25 backdrop-blur-md border-t border-white/20"
-            >
-              <h2 class="font-headline-sm text-white">
-                Midnight Silk Silhouette
-              </h2>
-              <p class="text-white/80 font-label-sm uppercase mt-1">
-                Neu eingetroffen
-              </p>
-            </div>
-          </div>
-          <div class="md:pb-unit-md">
-            <p
-              class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
-            >
-              Die Kunst der Robe
-            </p>
-            <h2
-              class="font-page-h1-mobile text-page-h1-mobile md:font-page-h1 md:text-page-h1 text-primary uppercase mb-unit-md"
-            >
-              Abendmode
-            </h2>
-            <p class="font-body text-body text-on-surface-variant mb-unit-md">
-              Lange Linien, feine Texturen und Silhouetten, die sich ruhig und
-              selbstverständlich anfühlen. Wir kuratieren Abendmode für Gala,
-              Oper, Hochzeit und festliche Empfänge.
-            </p>
-            <div class="flex flex-wrap gap-unit-sm">
-              <span class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface">Seide</span>
-              <span class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface">Satin</span>
-              <span class="rounded-xl bg-champagne px-unit-sm py-unit-xs font-label-sm text-on-surface">Plus Beratung</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-champagne snap-section"
-        id="cocktail"
-      >
-        <div
-          class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[420px_minmax(0,1fr)] md:items-center"
-        >
-          <div class="order-2 md:order-1">
-            <p
-              class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
-            >
-              Leicht, modern, präzise
-            </p>
-            <h2
-              class="font-page-h1-mobile text-page-h1-mobile md:font-page-h1 md:text-page-h1 text-primary leading-none mb-unit-sm"
-            >
-              Cocktail<br />& Chic
-            </h2>
-            <p class="font-body text-on-surface-variant max-w-reading-max mb-unit-md">
-              Kurze Kleider, klare Schnitte und raffinierte Details für
-              Empfänge, standesamtliche Feiern und Abende, die nicht nach
-              Standard aussehen sollen.
-            </p>
-            <a
-              class="inline-flex items-center gap-2 text-primary font-label-md uppercase tracking-wider group"
-              href="#contact"
-            >
-              <span>Beratung buchen</span>
-              <span
-                class="material-symbols-outlined transition-transform group-hover:translate-x-1"
-                >arrow_forward</span
-              >
-            </a>
-          </div>
-          <div class="order-1 md:order-2 justify-self-end w-4/5 md:w-full">
-            <img
-              alt="Cocktailkleid mit strukturierter Silhouette"
-              class="w-full aspect-[3/4] object-cover rounded-xl border border-outline-variant shadow-lg"
-              decoding="async"
-              height="701"
-              loading="lazy"
-              sizes="(min-width: 768px) 45vw, 80vw"
-              src="assets/images/cocktail-dress-720.jpg"
-              srcset="assets/images/cocktail-dress-480.jpg 480w, assets/images/cocktail-dress-720.jpg 720w, assets/images/cocktail-dress-960.jpg 960w"
-              width="960"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="relative min-h-[82vh] flex flex-col justify-center overflow-hidden snap-section"
-        id="besuch"
-      >
-        <div class="absolute inset-0 bg-surface-container-low">
+        <div class="wordmark-stage">
+          <span class="stage-note" aria-hidden="true">Persönliche Auswahl</span>
           <img
-            alt="Ruhige Boutique-Atmosphäre für Stilberatung"
-            class="w-full h-full object-cover"
-            decoding="async"
-            height="1440"
-            loading="lazy"
-            sizes="100vw"
-            src="assets/images/boutique-interior-960.jpg"
-            srcset="assets/images/boutique-interior-640.jpg 640w, assets/images/boutique-interior-960.jpg 960w, assets/images/boutique-interior-1440.jpg 1440w"
-            width="1440"
+            src="assets/Logolucent.png"
+            alt="Boutique Chantal"
+            width="732"
+            height="252"
+            fetchpriority="high"
           />
-          <div class="absolute inset-0 bg-ivory/86"></div>
-        </div>
-        <div
-          class="relative px-gutter-mobile md:px-gutter-desktop py-unit-xl max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[minmax(0,1fr)_420px] md:items-center"
-        >
-          <div>
-            <p
-              class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
-            >
-              Private Anprobe
-            </p>
-            <h2
-              class="font-page-h1-mobile text-page-h1-mobile md:font-page-h1 md:text-page-h1 text-primary mb-unit-md uppercase"
-            >
-              Ihr Moment
-            </h2>
-            <div class="w-16 h-px bg-primary mb-unit-lg"></div>
-            <p class="font-body text-body text-on-surface-variant leading-relaxed max-w-reading-max">
-              In privater Atmosphäre nehmen wir uns Zeit für Stoff, Anlass,
-              Passform und das gute Gefühl, wenn ein Kleid wirklich stimmt.
-            </p>
-          </div>
-          <div class="grid gap-unit-sm">
-            <div
-              class="flex items-center gap-3 rounded-lg border border-pearl bg-white/85 p-unit-md backdrop-blur-sm"
-            >
-              <span class="material-symbols-outlined text-secondary">event</span>
-              <div>
-                <p class="font-label-md">Persönlicher Termin</p>
-                <p class="text-on-surface-variant font-label-sm">Nach Vereinbarung</p>
-              </div>
-            </div>
-            <div
-              class="flex items-center gap-3 rounded-lg border border-pearl bg-white/85 p-unit-md backdrop-blur-sm"
-            >
-              <span class="material-symbols-outlined text-secondary">location_on</span>
-              <div>
-                <p class="font-label-md">Esslingen am Neckar</p>
-                <p class="text-on-surface-variant font-label-sm">Neckarstraße 11</p>
-              </div>
-            </div>
-            <a
-              class="inline-flex items-center justify-center gap-2 rounded-lg border border-primary px-unit-md py-unit-sm text-primary font-label-md uppercase tracking-wider transition-colors hover:bg-primary hover:text-on-primary"
-              href="https://www.google.com/maps/search/?api=1&query=Innere%20Br%C3%BCcke%2012%2C%2073728%20Esslingen%20am%20Neckar"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span>Route planen</span>
-              <span class="material-symbols-outlined text-[20px]">near_me</span>
-            </a>
-          </div>
+          <span class="stage-location">Neckarstraße 11 · 73728 Esslingen</span>
         </div>
       </section>
 
-      <section
-        class="py-unit-xl px-gutter-mobile md:px-gutter-desktop bg-white snap-section"
-        id="contact"
-      >
-        <div
-          class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[360px_minmax(0,1fr)]"
-        >
-          <div class="rounded-xl bg-surface-container-low p-unit-md border border-pearl h-fit">
-            <p
-              class="font-label-sm text-on-surface-variant uppercase tracking-widest mb-unit-xs"
-            >
-              Besuch planen
-            </p>
-            <h2 class="font-headline-md text-headline-md text-primary mb-unit-sm">
-              Rendezvous
-            </h2>
-            <p class="text-on-surface-variant font-body mb-unit-md">
-              Vereinbaren Sie Ihren individuellen Beratungstermin. Wir melden
-              uns persönlich zur Abstimmung zurück.
-            </p>
-            <dl class="space-y-unit-sm text-on-surface-variant font-label-sm">
-              <div>
-                <dt class="text-on-surface font-label-md">Adresse</dt>
-                <dd>Neckarstraße 11, 73728 Esslingen am Neckar</dd>
-              </div>
-              <div>
-                <dt class="text-on-surface font-label-md">Termine</dt>
-                <dd>Persönliche Beratung nach Vereinbarung</dd>
-              </div>
-            </dl>
-          </div>
-          <form class="space-y-unit-md" data-booking-form>
-            <div class="grid gap-unit-md md:grid-cols-2">
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="name"
-                  >Name</label
-                >
-                <input
-                  autocomplete="name"
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="name"
-                  name="name"
-                  placeholder="Ihren Namen eingeben"
-                  required
-                  type="text"
-                />
-              </div>
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="email"
-                  >E-Mail</label
-                >
-                <input
-                  autocomplete="email"
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="email"
-                  name="email"
-                  placeholder="ihre@email.de"
-                  required
-                  type="email"
-                />
-              </div>
-            </div>
-            <div class="grid gap-unit-md md:grid-cols-2">
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="date"
-                  >Wunschdatum</label
-                >
-                <input
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="date"
-                  name="date"
-                  required
-                  type="date"
-                />
-              </div>
-              <div>
-                <label
-                  class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                  for="occasion"
-                  >Anliegen</label
-                >
-                <select
-                  class="w-full min-h-11 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                  id="occasion"
-                  name="occasion"
-                >
-                  <option>Abendmode Beratung</option>
-                  <option>Cocktailkleider</option>
-                  <option>Brautjungfern</option>
-                  <option>Accessoires</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label
-                class="block font-label-sm text-on-surface-variant uppercase mb-unit-xs"
-                for="message"
-                >Nachricht</label
-              >
-              <textarea
-                class="w-full min-h-28 px-unit-md py-unit-sm bg-background border border-pearl rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                id="message"
-                name="message"
-                placeholder="Anlass, Größe oder erste Wünsche"
-              ></textarea>
-            </div>
-            <button
-              class="w-full md:w-auto inline-flex items-center justify-center gap-2 py-unit-md px-unit-lg bg-primary text-on-primary font-label-md uppercase tracking-widest rounded-lg shadow-lg active:scale-95 transition-transform hover:bg-primary-container"
-              type="submit"
-            >
-              <span>Termin anfragen</span>
-              <span class="material-symbols-outlined text-[20px]">send</span>
-            </button>
-          </form>
+      <section class="expect section-frame" id="erwartet" aria-labelledby="expect-title">
+        <div class="section-heading">
+          <p class="eyebrow">Was Sie erwartet</p>
+          <h2 id="expect-title">Persönliche Auswahl,<br />nah gezeigt.</h2>
         </div>
+
+        <ol class="expect-list">
+          <li>
+            <span class="number" aria-hidden="true">01</span>
+            <div>
+              <h3>Abendmode</h3>
+              <p>Eine handverlesene Auswahl für besondere Anlässe.</p>
+            </div>
+          </li>
+          <li>
+            <span class="number" aria-hidden="true">02</span>
+            <div>
+              <h3>Cocktailkleider</h3>
+              <p>Ein eigener Schwerpunkt innerhalb der Auswahl.</p>
+            </div>
+          </li>
+          <li>
+            <span class="number" aria-hidden="true">03</span>
+            <div>
+              <h3>Persönliche Stilberatung</h3>
+              <p>Persönliche Begleitung bei der Auswahl.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="collections section-frame" aria-label="Sortimentsschwerpunkte">
+        <article class="collection collection-evening" id="abendmode">
+          <div class="collection-index" aria-hidden="true">A</div>
+          <div class="collection-copy">
+            <p class="eyebrow">Der Schwerpunkt</p>
+            <h2>Abendmode</h2>
+            <p>
+              Abendmode steht im Mittelpunkt der Boutique Chantal. Die
+              handverlesene Auswahl wird persönlich begleitet – direkt in
+              Esslingen am Neckar.
+            </p>
+            <a class="text-link" href="tel:+4971139111114">Zur Beratung anrufen</a>
+          </div>
+        </article>
+
+        <article class="collection collection-cocktail" id="cocktailkleider">
+          <div class="collection-index" aria-hidden="true">C</div>
+          <div class="collection-copy">
+            <p class="eyebrow">Teil der Auswahl</p>
+            <h2>Cocktail<wbr />kleider</h2>
+            <p>
+              Auch Cocktailkleider gehören zur Auswahl. Bei der persönlichen
+              Stilberatung steht im Mittelpunkt, welches Kleid zu Ihnen und
+              Ihrem Anlass passt.
+            </p>
+            <a class="text-link" href="tel:+4971139111114">Boutique anrufen</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="visit section-frame" id="besuch" aria-labelledby="visit-title">
+        <div class="visit-heading">
+          <p class="eyebrow">Vor Ort in Esslingen</p>
+          <h2 id="visit-title">Ihr Besuch</h2>
+          <p>
+            Aktuelle Öffnungszeiten bitte telefonisch erfragen.
+          </p>
+        </div>
+
+        <dl class="visit-facts">
+          <div>
+            <dt>Adresse</dt>
+            <dd>Neckarstraße 11<br />73728 Esslingen am Neckar</dd>
+          </div>
+          <div>
+            <dt>Telefon</dt>
+            <dd><a href="tel:+4971139111114">0711 39111114</a></dd>
+          </div>
+          <div>
+            <dt>Öffnungszeiten</dt>
+            <dd>Bitte telefonisch erfragen.</dd>
+          </div>
+        </dl>
+
+        <a
+          class="button button-outline"
+          href="https://www.google.com/maps/search/?api=1&amp;query=Neckarstra%C3%9Fe%2011%2C%2073728%20Esslingen%20am%20Neckar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Route zu Neckarstraße 11
+        </a>
+      </section>
+
+      <section class="contact-band" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Direkter Kontakt</p>
+          <h2 id="contact-title">Wir sind telefonisch für Sie erreichbar.</h2>
+        </div>
+        <a href="tel:+4971139111114" aria-label="Boutique Chantal anrufen: 0711 39111114">
+          <span>Anrufen</span>
+          0711 39111114
+        </a>
       </section>
     </main>
 
-    <footer
-      class="bg-surface-container-low py-unit-lg px-gutter-mobile md:px-gutter-desktop border-t border-pearl"
-    >
-      <div
-        class="max-w-container-max mx-auto grid gap-unit-lg md:grid-cols-[1fr_auto] md:items-end"
-      >
-        <div>
-          <h2 class="font-headline-sm text-primary mb-unit-sm">
-            Boutique Chantal
-          </h2>
-          <p class="font-body text-on-surface-variant text-sm">
-            Neckarstraße 11, 73728 Esslingen am Neckar
-          </p>
-          <div class="flex gap-unit-md mt-unit-md">
-            <a class="text-secondary hover:underline font-label-sm" href="#"
-              >Instagram</a
-            >
-            <a class="text-secondary hover:underline font-label-sm" href="#"
-              >Facebook</a
-            >
-          </div>
-        </div>
-        <div class="grid grid-cols-2 gap-unit-md text-left md:text-right">
-          <a
-            class="text-on-surface-variant font-label-sm uppercase hover:text-primary transition-colors"
-            href="#"
-            >Impressum</a
-          >
-          <a
-            class="text-on-surface-variant font-label-sm uppercase hover:text-primary transition-colors"
-            href="#"
-            >Datenschutz</a
-          >
-          <a
-            class="text-on-surface-variant font-label-sm uppercase hover:text-primary transition-colors"
-            href="#contact"
-            >Kontakt</a
-          >
-          <a
-            class="text-on-surface-variant font-label-sm uppercase hover:text-primary transition-colors"
-            href="#besuch"
-            >Anfahrt</a
-          >
-        </div>
-        <p
-          class="text-on-surface-variant font-label-sm text-[12px] opacity-70 md:col-span-2"
-        >
-          © 2024 Boutique Chantal Esslingen. Alle Rechte vorbehalten.
-        </p>
+    <footer class="site-footer section-frame">
+      <div>
+        <p class="footer-name">Boutique Chantal</p>
+        <p>Abendmode und Cocktailkleider in Esslingen am Neckar</p>
       </div>
+      <nav aria-label="Seitennavigation">
+        <a href="#top">Nach oben</a>
+        <a href="#besuch">Adresse &amp; Anfahrt</a>
+        <a href="tel:+4971139111114">0711 39111114</a>
+      </nav>
+      <p class="copyright">© Boutique Chantal</p>
     </footer>
-
-    <a
-      aria-label="Termin anfragen"
-      class="fixed bottom-unit-md right-gutter-mobile w-14 h-14 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center z-40 md:hidden"
-      href="#contact"
-    >
-      <span
-        class="material-symbols-outlined"
-        style="font-variation-settings: 'FILL' 1"
-        >calendar_add_on</span
-      >
-    </a>
   </body>
 </html>
